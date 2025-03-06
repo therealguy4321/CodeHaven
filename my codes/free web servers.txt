@@ -1,8 +1,0 @@
-https://pages.github.com/
-https://www.netlify.com/
-
-https://aws.amazon.com/education/awseducate/
-https://azure.microsoft.com/en-us/free/students/
-https://cloud.google.com/edu/students
-
-https://education.github.com/pack
