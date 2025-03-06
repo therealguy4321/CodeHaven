@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}Expense Tracker - Add Expense{% endblock %}
+
+{% block content %}
+    <h3>Add Expense</h3>
+    <form class="form" method="post" action="{{ url_for('add_expense') }}">
+        {{ form.hidden_tag() }}
+        <div class="username">
+            <input type="text" id="description" name="description" placeholder="Description" required>
+        </div>
+        <div class="password">
+            <input type="text" id="amount" name="amount" placeholder="Amount" required>
+        </div>
+        <div class="btn-box">
+            <button type="submit" class="btn btn-primary">Add Expense</button>
+        </div>
+    </form>
+    <p>Back to <a href="{{ url_for('home') }}">Home</a></p>
+{% endblock %}

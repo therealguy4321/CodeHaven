@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}Expense Tracker - Login{% endblock %}
+
+{% block content %}
+    <h3>Login</h3>
+    <form class="form" method="post" action="{{ url_for('login') }}">
+        <div class="username">
+            <input type="text" id="identifier" name="identifier" placeholder="Username or Email" required>
+        </div>
+        <div class="password">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="btn-box">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+    <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+{% endblock %}

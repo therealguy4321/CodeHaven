@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <h2>Portfolio</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total Value</th>
+                <th>Action</th> <!-- New column for buttons -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.name }}</td>
+                    <td>{{ stock.total_shares }}</td>
+                    <td>{{ stock.price }}</td>
+                    <td>{{ stock.value }}</td>
+                    <td>
+                        <!-- Buy button with input field for number of shares -->
+                        <form action="/buy" method="post" style="display:inline;">
+                            <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+                            <input type="number" name="shares" placeholder="Shares" min="1" required>
+                            <button type="submit" class="btn btn-primary btn-sm">Buy</button>
+                        </form>
+
+                        <!-- Sell button with input field for number of shares -->
+                        <form action="/sell" method="post" style="display:inline;">
+                            <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+                            <input type="number" name="shares" placeholder="Shares" min="1" max="{{ stock.total_shares }}" required>
+                            <button type="submit" class="btn btn-danger btn-sm">Sell</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4" align="right">Cash</td>
+                <td>{{ cash }}</td>
+                <td></td> <!-- Empty cell for alignment with the Action column -->
+            </tr>
+            <tr>
+                <td colspan="4" align="right">Total</td>
+                <td>{{ total_value }}</td>
+                <td></td> <!-- Empty cell for alignment with the Action column -->
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

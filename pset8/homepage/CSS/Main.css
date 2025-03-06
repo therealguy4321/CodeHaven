@@ -1,0 +1,486 @@
+/* Global Styles */
+body {
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
+    color: ;
+    text-align: ;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navigation Styles */
+.nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: snow;
+}
+
+.nav nav li {
+    float: left;
+}
+
+.nav nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    /* Default font size for all items */
+    font-weight: normal;
+    /* Default font weight for all items */
+}
+
+.nav nav li:first-child a {
+    font-size: 20px;
+    /* Larger font size for the first item */
+    font-weight: bold;
+    /* Bold font for the first item */
+}
+
+.nav nav li a:hover {
+    background-color: rgb(27, 127, 194);
+    color: snow;
+}
+
+.nav .active {
+    background-color: green;
+}
+
+/* Campaign Section Styles */
+#campaign {
+    text-align: center;
+    background-image: url(Images/Image\ 202.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: snow;
+    padding: 50px;
+    margin: 70px;
+}
+
+#campaign h1 {
+    font-size: 50px;
+}
+
+#campaign a {
+    background-color: black;
+    display: block;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px;
+    color: snow;
+    max-width: 150px;
+    text-align: center;
+    margin-left: 43%;
+}
+
+#campaign a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+/* Get Details Section Styles */
+#getdetails {
+    text-align: left;
+    height: 100px;
+    padding: 20px;
+}
+
+#getdetails a {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    color: snow;
+    max-width: 200px;
+    text-align: center;
+    max-height: 50px;
+}
+
+#getdetails a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+/* Audience Section Styles */
+#audience {
+    width: 100%;
+    padding: 70px;
+    margin: 30px;
+}
+
+#audience h1 {
+    font-size: 50px;
+}
+
+#audience h2 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.col-md-4 {
+    margin: 10;
+}
+
+/* Start Section Styles */
+#start {
+    text-align: left;
+    background-color: rgb(161, 161, 161);
+    width: 100%;
+    height: 500px;
+    padding: 100px;
+    padding-left: ;
+}
+
+#start .col-md-3 {
+    background-color: snow;
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+}
+
+/* Calendar Section Styles */
+#cal {
+    height: 350px;
+    padding: 50px;
+}
+
+#cal a {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    color: snow;
+    max-width: 200px;
+    text-align: center;
+    max-height: 50px;
+    margin-left: 43%;
+}
+
+#cal a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+/* Cover Section Styles */
+.cover {
+    background-color: rgb(161, 161, 161);
+    height: 600px;
+}
+
+#advert {
+    margin: 70px;
+}
+
+#advert h1 {
+    margin-top: 25px;
+}
+
+#advert .col-md-6 {
+    margin-top: 30px;
+}
+
+#advert .col-md-6 h3 {
+    margin-top: 50px;
+}
+
+#advert .col-md-6 img {
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+#advert .col-md-6 a {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+    color: snow;
+    max-width: 200px;
+    text-align: center;
+}
+
+#advert .col-md-6 a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+/* Community Section Styles */
+#comm {
+    background-color: rgb(37, 37, 37);
+    color: black;
+    height: 300px;
+    padding: 100px;
+}
+
+#comm p {
+    color: snow;
+}
+
+#blog {
+    height: 250px;
+    padding: 100px;
+}
+
+#blog a {
+    background-color: snow;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    color: black;
+    max-width: 200px;
+    text-align: center;
+}
+
+#blog a:hover {
+    background-color: grey;
+    color: snow;
+}
+
+#go {
+    height: 300px;
+    padding: 200px;
+}
+
+#go a {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 5px;
+    color: snow;
+    max-width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+#go a:hover {
+    background-color: grey;
+    color: snow;
+}
+
+.source {
+    padding-left: 200px;
+}
+
+.source a {
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 5px;
+    color: black;
+    max-width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+.source a:hover {
+    color: grey;
+}
+
+.Marquee {
+    background-color: ;
+    color: ;
+
+    border-right: 5px;
+    border-left: 5px;
+    border-top: 5px;
+    border-bottom: 5px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: gray;
+    min-height: 50px;
+    color: snow;
+}
+
+a:link {
+    color: blue
+}
+
+a:visited {
+    color: purple
+}
+
+a:hover {
+    color: red
+}
+
+a:active {
+    color: green
+}
+
+/* Tech Today Styles */
+#tech {
+    text-align: center;
+    background-image: url(Images/Image\ 202.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: snow;
+    padding: 50px;
+    margin: 70px;
+}
+
+#tech h1 {
+    font-size: 50px;
+}
+
+#tech a {
+    background-color: black;
+    display: block;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px;
+    color: snow;
+    max-width: 150px;
+    text-align: center;
+    margin-left: 43%;
+}
+
+#tech a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+/* Tech Details Styles */
+#techgetdetails {
+    text-align: right;
+    height: 350px;
+    padding: 50px;
+}
+
+#techgetdetails a {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    color: snow;
+    max-width: 200px;
+    text-align: center;
+    max-height: 50px;
+}
+
+#techgetdetails a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+#youngest {
+    text-align: left;
+    width: 100%;
+    padding: 50px;
+    margin: ;
+}
+
+#youngest h2 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#younggetdetails {
+    text-align: left;
+    height: 100px;
+    padding: 20px;
+}
+
+#younggetdetails a {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    color: snow;
+    max-width: 200px;
+    text-align: center;
+    max-height: 50px;
+}
+
+#younggetdetails a:hover {
+    background-color: gray;
+    color: snow;
+}
+
+/* Business Section Styles */
+#business {
+    background-color: rgb(161, 161, 161);
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    padding-left: ;
+}
+
+#business .col-md-3 {
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+}
+
+/* Responsive Animation Styles */
+.fade-in {
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Animation properties */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    /* Start the element off-screen to the left */
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Move the element to its original position */
+    }
+}
+
+.fade-in-right {
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    transform: translateX(100%);
+    /* Start from the right outside the viewport */
+    animation: fadeInRight 1s ease-in-out forwards;
+    /* Animation properties */
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Additional Styles for Other Sections... */

@@ -1,0 +1,198 @@
+body{
+	background-color: ;
+	color: ;
+
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: ;
+}
+
+.wrapper{
+	width: ;
+	margin: ;
+
+	background-image: url();
+	background-color: white; 
+}	
+
+.header{
+	background-color: blue;
+	color: black;
+	font-size: ;
+}
+
+.home{
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: 1000px;
+  width: 950px;
+  height: 950px;
+  border: ;
+  color: ;
+
+	background-color: ; 
+	color: black;
+
+	border-right: 5px ;
+	border-left: 5px ;
+	border-top: 5px ;
+	border-bottom: 5px; 
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right:  0px;
+	margin-left: 0px;
+}
+
+.home h1{
+	background-color: ;
+	font-family: ;
+	font-weight: 20px;
+	font-style: ;
+	font-size: ;
+	text-decoration: ;
+	text-transform: ;
+	letter-spacing: ;
+	word-spacing: ;
+
+	border: 5px;
+	padding: 20px
+}
+
+ p{
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: ;
+}
+
+.About{
+	background-color: ; 
+	color: ;
+
+	border-right: 5px ;
+	border-left: 5px ;
+	border-top: 5px ;
+	border-bottom: 5px; 
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right:  0px;
+	margin-left: 0px;
+}
+
+.About h1{
+	background-color: ;
+	font-family: ;
+	font-weight: ;
+	font-style: ;
+	font-size: ;
+	text-decoration: ;
+	text-transform: ;
+	letter-spacing: ;
+	word-spacing: ;
+}
+
+p{
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: ;
+}	
+
+.categories{
+	background-color: ; 
+	color: ;
+
+	border-right: 5px ;
+	border-left: 5px ;
+	border-top: 5px ;
+	border-bottom: 5px; 
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right:  0px;
+	margin-left: 0px;
+}
+
+.categories h1{
+	background-color: ;
+	font-family: ;
+	font-weight: ;
+	font-style: ;
+	font-size: ;
+	text-decoration: ;
+	text-transform: ;
+	letter-spacing: ;
+	word-spacing: ;
+}
+
+.categories p{
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: ;
+}
+
+.Marquee{
+	background-color: ; 
+	color: ;
+
+	border-right: 5px ;
+	border-left: 5px ;
+	border-top: 5px ;
+	border-bottom: 5px; 
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-right:  0px;
+	margin-left: 0px;
+}
+
+a:link{color: blue}
+a:hover{color: red}
+a:active{color: green}
+a:visited{color: purple}
+
+#footer{
+	text-align: right;
+}
+
+#contactInfo{
+	float: right;
+	position: all;
+}
+
+#dashboard {
+	width: 110px;
+	background-color: red;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 100;
+}
+#dashboard img {
+	margin-bottom: 20px;
+	border: 1px solid ;
+}

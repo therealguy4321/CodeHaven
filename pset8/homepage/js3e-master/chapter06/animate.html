@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<title>A Slide In Dashboard</title>
+<link href="../_css/site.css" rel="stylesheet">
+<span onclick="openNav()">
+<style>
+#dashboard {
+	width: 110px;
+	background-color: rgb(255,211,224);
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 100;
+}
+</span>
+#dashboard img {
+	margin-bottom: 20px;
+	border: 1px solid rgb(0,0,0);
+}
+</style>
+<script src="../_js/jquery.min.js"></script>
+	
+<script>
+$(document).ready(function() {
+ 
+}); // end ready
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL
+  </header>
+  <div id="mySidenav" class="sidenav">
+  	  <a href="#" class="closebtn" onclick="closeNav()"> &times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "-250";
+}
+</script>
+<div id="dashboard">
+<img src="../_images/small/blue_h.jpg" width="70" height="70" alt="blue">
+<img src="../_images/small/green_h.jpg" width="70" height="70" alt="green">
+<img src="../_images/small/orange_h.jpg" width="70" height="70" alt="orange">
+<img src="../_images/small/purple_h.jpg" width="70" height="70" alt="purple">
+<img src="../_images/small/red_h.jpg" width="70" height="70" alt="red">
+<img src="../_images/small/yellow_h.jpg" width="70" height="70" alt="yellow">
+</div>
+<div class="content">
+<div class="main">
+<h1>Slide in Dashboard</h1>
+<p>Mouse over the pink stripe on the left edge of this page</p>
+</div>
+</div>
+<footer>
+    <p>JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
+</footer>
+</div>
+</body>
+</html>

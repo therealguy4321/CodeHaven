@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}Expense Tracker - Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome, {{ user.username }}!</h1>
+    <h2>Expenses:</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for expense in expenses|sort(attribute='amount', reverse=True) %}
+                <tr>
+                    <td>{{ expense.description }}</td>
+                    <td>${{ expense.amount }}</td>
+                    <td>
+                        <form method="post" action="{{ url_for('delete_expense', expense_id=expense.id) }}">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td><strong>Total:</strong></td>
+                <td>${{ expenses|sum(attribute='amount') }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{{ url_for('add_expense') }}" class="btn btn-primary">Add Expense</a>
+    <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+{% endblock %}
